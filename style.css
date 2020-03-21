@@ -1,0 +1,65 @@
+.card-body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.card-text{
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.main-card{
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: black;
+}
+h1{
+    text-align: center;
+    color:white;
+}
+
+.five-day{
+    padding: 20px;
+    background: rgb(253,187,45);
+background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(253,187,45,1) 5%, rgba(34,193,195,1) 100%);
+}
+
+.city{
+    font-weight: 700;
+}
+
+
+
+/* Me trying to add floating clouds to the div, still working in progress.
+
+@keyframes clouds{
+    from{
+        right: 0%;
+    }
+    to{
+        right: 130%;
+    }
+}
+    .cloud1, .cloud2, .cloud3{
+        height: 100px;
+        position: absolute;
+        right: 0%;
+        z-index: -1;
+    
+    }
+    .cloud1 {
+        top: 25%;
+        transform: translate(100%, -25%);
+        animation: clouds 3s ease infinite;
+    }
+    .cloud2{
+        top: 50%;
+        transform: translate(100%, -50%);
+        animation: clouds 3s ease infinite 2s;
+    }
+    .cloud3{
+        top: 75%;
+        transform: translate(100%, -75%);
+        animation: clouds 3s ease infinite 3;
+    
+    }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+      <!-- Header for Weather app-->
+      <header class="header bg-dark">
+          <h1>Weather App</h1>
+      </header>
+      <!--Search form and container-->
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12 col-lg-3">
+                  <!--Search form-->
+                  <form id="city-form">
+                      <label for="city-input">Search for Location</label>
+                      <input type="text" id="city-input">
+                      <!--Submit button-->
+                      <button type="submit" id="find-city" class="btn">
+                          <i class="fa fa-search"></i>
+                      </button>
+                  </form>
+                  <div id="city-list"></div>
+                </div>
+                <!--Area for main forecast-->
+                <div class="col-sm-12 col-lg-9">
+                  <div class="card">
+
+                    <!--Messing with css animation please ignore-->
+                   <!--<img class="cloud1" src="cloud.png"  alt="cloud1">
+                    <img class="cloud2" src="cloud.png"  alt="cloud2">
+                    <img class="cloud3" src="cloud.png"  alt="cloud3">--> 
+                    
+
+
+                    <div class="card-body">
+                      <h1 id="city-name">______</h1>
+                      <p>Temperature: <span class="main-card" id="city-temp"></span> &deg;F</p>
+                      <p>Humidity: <span class="main-card" id="city-humid"></span>%</p>
+                      <p>Wind Speed: <span class="main-card" id="city-wind"></span> MPH</p>
+                      <p>Condition: <span class="main-card" id="city-condition"></span></p>
+                    </div>
+                  </div>
+                  <div class="five-day">
+                    <h1>5-Day Forecast:</h1>
+                  </div>
+                  <!--Five day forecast will be appended here from the dom-->
+                    <div class="card-deck" id="five-day-forecast">
+                    </div>
+                </div>
+              </div>
+        
+            </div>
+            <!--Sources here-->
+        
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script src="script.js"></script>
+              </div>
+          </div>
+      </div>
+
+  </body>
+
+  </html>
